@@ -1,0 +1,29 @@
+<ion-view>
+    <ion-content>
+        <h1>Setting</h1>
+        <!--
+        <ul ng-repeat="todo in arrayList track by $index" class="todolist">
+            <li>{{todo.title}}
+                <button class="btn btn-default btnremove" ng-click="remove($index)" class="col-md-offset-3">Remove</button>
+
+            </li>
+
+            <hr>
+        </ul>
+-->
+
+
+
+        <div class="list">
+
+            <div class="item item-divider">
+                Settings
+            </div>
+
+            <ion-toggle ng-repeat="item in settingsList" ng-model="item.checked" ng-checked="item.checked" ng-change="pushNotificationChange()">
+                {{ item.text }}
+            </ion-toggle>
+
+
+    </ion-content>
+</ion-view>
