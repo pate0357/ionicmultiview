@@ -8,7 +8,6 @@ angular.module('starter.setting', [])
 
 
                 navigator.vibrate(200);
-                alert("Ve");
                 return;
 
 
@@ -16,7 +15,6 @@ angular.module('starter.setting', [])
 
             schedleNotification: function (listTitle) {
 
-                alert("pu");
                 var msg = 'Your ' + listTitle + ' list marked as completed.';
 
                 $cordovaLocalNotification.schedule({
