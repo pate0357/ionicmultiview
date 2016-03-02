@@ -24,8 +24,6 @@ angular.module('ionic.utils', [])
                 alert("Local Storage is not supported batter luck next time!");
             }
 
-
-
         },
         //get value from local storage
         getvalue: function (id) {
@@ -116,8 +114,5 @@ angular.module('ionic.utils', [])
             return this.settingsList;
 
         }
-
-
-
     }
 });

@@ -24,13 +24,13 @@
          $scope.arrayList.splice(toIndex, 0, todo);
      };
 
-     //add item in local storage for that page 
+     //add item in local storage for that page
      $scope.addThing = function (name) {
 
          $scope.arrayList = utilizedata.addThingfactory($scope.name, id);
          $scope.name = "";
 
-     }
+     };
 
      $scope.data = {
          showDelete: false
@@ -48,7 +48,7 @@
 
          $scope.arrayList = utilizedata.checkboxctl($scope.pushNotification.checked, $scope.name, id);
 
-         //get the local storage array for settinf
+         //get the local storage array for setting
          var selist = [];
          selist = localStorageService.get('setting');
 
@@ -71,23 +71,14 @@
 
                      }
                  }
-
                  if (isAllDone) {
 
                      console.log("items done");
                      appsetting.schedleNotification($scope.listTitle);
                  }
-
-
-
              }
          }
-
-
-
      };
-
-
 
      $scope.pushNotification = {
          checked: true,
@@ -111,9 +102,4 @@
 
 
      };
-
-
-
-
-
  });
